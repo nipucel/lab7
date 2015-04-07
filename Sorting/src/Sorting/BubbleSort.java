@@ -11,6 +11,11 @@ public class BubbleSort {
 		if (unsortedArray == null) {
 			return null;
 		}
+		int[] toSort = new int[unsortedArray.length];
+		for (int i = 0; i < unsortedArray.length; i++) {
+			toSort[i] = unsortedArray[i];
+		}
+		unsortedArray = toSort;
 		boolean swapped = true;
 		while (swapped) {
 			swapped = false;
